@@ -12,7 +12,7 @@ body {
 
 #container {
 	width: 580px;
-	margin: 0 auto;
+	margin: 200px auto 0;
 	text-align: center;
 
 }
@@ -27,9 +27,9 @@ h1#logo {
 }
 
 input[type="text"] {
-	width: 464px;
+	width: 550px;
 	padding: 13px;
-	margin: 30px 0 30px;
+	margin: 20px 0 20px;
 	border: solid 1px #ccc;
 	font-size: 16px;
 	font-family: Helvetica, sans-serif;
@@ -51,4 +51,79 @@ input[type="submit"] {
 	margin: 11px 4px;
 	padding: 0 16px;
 	height: 36px;
+}
+
+input[type="submit"]:hover {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	background-color: #a5a5a525;
+	border: 1px solid #c6c6c6;
+	color: #222;
+	cursor: pointer;
+}
+
+a:link {
+	color: #000;
+	opacity: 0.75;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+a:link, a:visited {
+	color: #000;
+	opacity: 0.75;
+	text-decoration: none;
+	font-size: 13px;
+	
+}
+
+header nav {
+	text-align: left;
+	padding: 15px;
+	position: fixed;
+	float: right;
+	top: 0;
+	width: 100%;
+
+}
+
+header nav ul {
+	float: left;
+}
+
+header nav ul.top-right-links {
+	float: right;
+}
+
+header nav ul li,
+footer nav ul li {
+	display: inline;
+}
+
+header nav ul li a:link,
+header nav ul li a:visited,
+footer nav ul li a:link,
+footer nav ul li a:visited {
+	padding: 10px;
+}
+
+header nav ul li a:hover,
+footer nav ul li a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	background-color: #f2f2f2;
+	text-align: right;
+	padding: 15px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+footer nav ul {
+	float: left;
+}
+
+footer nav ul.right-links {
+	float: right;
 }
